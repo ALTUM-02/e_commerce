@@ -1,0 +1,43 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    z-index: 9;
+    background-color: #3B6790;
+}
+
+.nav-link ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-link ul li{
+    outline: none;
+    list-style: none;
+    margin-left: 40px;
+    margin-left: 40px;
+}
+
+.nav-link ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #0F172A;
+
+}
+
+.nav-link ul li a:hover{
+    border-bottom: 2px plue solid;
+    color: #727D73;
+}
+.account ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.account ul li{
+    list-style: none;
+    margin-left: 40px;
+    margin-left: 40px;
+}
