@@ -57,30 +57,39 @@ input:focus {
 }
 
 button {
+    justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 100%;
+    margin-top: 15px;
     margin-top: 20px;
     padding: 12px;
     background: #0f766e;
     color: white;
-    border: none;
     border-radius: 10px;
+    font-weight: bold;
     font-size: 16px;
     cursor: pointer;
 }
 
 .login-container {
+    display: flex;
     position: center;
     width: 600px;
-    height: 900px;
+    height: 100vh;
     justify-content: center;
     align-items: center;
-    border-radius: 400px;
+    border-radius: 20px;
     cursor: pointer;
     padding: 40px;
 }
 
 .login-card {
+    border-radius: 20px;
+    position: relative;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px #00ffcc;
+    text-align: center;
     justify-content: center;
     align-items: row;
     background: linear-gradient(90deg, #ff4dff, #00ffcc);
