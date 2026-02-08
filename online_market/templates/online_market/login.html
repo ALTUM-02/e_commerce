@@ -1,21 +1,27 @@
 {% extends "reusable/base.html"%}
 
 {% block content %}
+<div class="login-container">
+  <div class="login-card">
+    <h1>welcome back</h1>
+    <p>signin to continue</p>
 
-<h1>welcome back</h1>
-<p>signin to continue</p>
+    <form method="POST">
+    {% csrf_token %}
 
-                <form method="POST">
-                  {% csrf_token %}
+    <label>username</label>
+    <input type="text" name="username" placeholder="Username" required><br><br>
 
-                  <label>username</label>
-                  <input type="text" name="username" placeholder="Username" required><br><br>
+    <label>password</label>
+    <input type="password" name="password" placeholder="Password" required><br><br>
 
-                  <label>password</label>
-                  <input type="password" name="password" placeholder="Password" required><br><br>
+    <button type="submit" >Sign In</button>
 
-                  <button type="submit" >Sign In</button>
+    </form>
 
-                </form>
-
+    <div>
+      <p>We secure your Account </p>
+    </div>
+  </div>
+</div>    
 {% endblock %}
