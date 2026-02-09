@@ -135,4 +135,10 @@ button {
 .form-group label {
     margin-bottom: 6px;
     font-size: 14px;
+    color: #ccc;
+}
+
+.form-group input {
+    padding: 12px;
+    border-radius: 6px;
 }
