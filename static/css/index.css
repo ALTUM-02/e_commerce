@@ -127,5 +127,12 @@ button {
 }
 
 .form-group {
-    
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 6px;
+    font-size: 14px;
 }
