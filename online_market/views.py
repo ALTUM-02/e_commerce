@@ -30,5 +30,9 @@ def login(request):
             user = form.save()
             register(request, user)
             return redirect('home')
-    return render(request, 'online_market/login.html', {'form':form})    
+    return render(request, 'online_market/login.html', {'form':form})  
+
+def logout_user(request):
+    logout(request)
+    return redirect('login')  
         
