@@ -14,16 +14,34 @@
         {% csrf_token %}
 
         <div class="text">
-            <input type="text" name="username" placeholder="Username" required><br><br>
-            <i class="fa-solid fa-pen-to-square"></i>   
-            </div>    
+            <div class="form-group">
+                <lebel>username</lebel>
+                <input type="text" name="username" placeholder="Username" required><br><br>
+            </div>  
+            
+            <div class="form-group">
+                <lebel>UserEmail</lebel>
+                <input type="email" name="email" placeholder="Email" required><br><br>
+            </div>
+            <div class="form-group">
+                <lebel>UserPassword</lebel>
+                <input type="password" name="password1" placeholder="Password" required><br><br>
+            </div>
 
-    
-            <input type="email" name="email" placeholder="Email" required><br><br>
-            <input type="password" name="password1" placeholder="Password" required><br><br>
-            <input type="password" name="password2" placeholder="Confirm Password" required><br><br>
-            <input type="date" name="date_of_birth" placeholder="Date of Birth" required><br><br>
-            <input type="number" name="phone_number" placeholder="Phone Number" required><br><br>
+            <div class="form-group" >
+                <lebel>ConfirmPassword</lebel>
+                <input type="password" name="password2" placeholder="Confirm Password" required><br><br>
+            </div>
+
+            <div class="group-form">
+                <lebel>birth's date</lebel>
+                <input type="date" name="date_of_birth" placeholder="Date of Birth" required><br><br>
+            </div>
+            
+            <div class="group-form">
+                <lebel>PhoneNumber</lebel>    
+                <input type="number" name="phone_number" placeholder="Phone Number" required><br><br>
+            </div>
 
             <input type="submit" value="Register">
         </form>
