@@ -15,13 +15,7 @@
 
 .nav-link ul li{
     outline: none;
-    list-style: none;
-    margin-left: 40px;
-    margin-left: 40px;
-}
-
-.nav-link ul li a{
-    text-decoration: none;
+    list-style: none;any
     font-size: 20px;
     color: #0F172A;
 
