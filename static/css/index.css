@@ -89,7 +89,7 @@ button {
     background: linear-gradient(90deg, #ff4dff, #00ffcc);
 }
 
-.login-card lebel {
+.login-card label {
     display: grid;
     gap: 20px;
     width: 90px;
