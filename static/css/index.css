@@ -89,12 +89,6 @@ button {
     background: linear-gradient(90deg, #ff4dff, #00ffcc);
 }
 
-.login-card label {
-    display: grid;
-    gap: 20px;
-    width: 90px;
-}
-
 .register-container {
     display: flex;
     position: center;
