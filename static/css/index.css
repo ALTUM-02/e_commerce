@@ -55,6 +55,7 @@
     display: flex;
     background: #0b1f4d;
     border-radius: 30px;
+    overflow: hidden;
 }
 
 .nav-link ul li a:hover{
