@@ -54,7 +54,7 @@
 .search-box {
     display: flex;
     background: #0b1f4d;
-    
+    border-radius: 30px;
 }
 
 .nav-link ul li a:hover{
