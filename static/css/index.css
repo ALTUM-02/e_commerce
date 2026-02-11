@@ -41,6 +41,11 @@
     max-width: 50%;
 }
 
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
 .nav-link ul li a:hover{
     border-bottom: 2px plue solid;
     color: #727D73;
