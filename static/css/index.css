@@ -79,7 +79,10 @@
     margin-top: 15px;
 }
 
-
+.ta span {
+    background: #0b1f4d;
+    padding: 6px 14px;
+}
 
 .nav-link ul li a:hover{
     border-bottom: 2px plue solid;
