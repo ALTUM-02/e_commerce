@@ -75,16 +75,16 @@
     cursor: white;
 }
 
-.tag span {
+.tags span {
     margin-top: 15px;
 }
 
-.ta span {
+.tags span {
     background: #0b1f4d;
     padding: 6px 14px;
     border-radius: 20px;
     margin-right: 8px;
-    
+    font-size: 13px;
 }
 
 .nav-link ul li a:hover{
