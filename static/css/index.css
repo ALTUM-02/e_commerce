@@ -59,7 +59,12 @@
     width: 380px;
 }
 
-.search-box
+.search-box input {
+    flex: 1;
+    border: none;
+    padding: 12px;
+    background: transparent;
+}
 
 .nav-link ul li a:hover{
     border-bottom: 2px plue solid;
