@@ -67,6 +67,10 @@
     color: white;
 }
 
+.search-box button {
+    background: ;
+}
+
 .nav-link ul li a:hover{
     border-bottom: 2px plue solid;
     color: #727D73;
