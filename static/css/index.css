@@ -64,6 +64,7 @@
     border: none;
     padding: 12px;
     background: transparent;
+    color: white;
 }
 
 .nav-link ul li a:hover{
