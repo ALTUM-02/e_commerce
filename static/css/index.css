@@ -37,6 +37,10 @@
     background: radial-gradient(circle at right, #2563eb, #050d1f 70%);
 }
 
+.hero-text {
+    max-width: 50%;
+}
+
 .nav-link ul li a:hover{
     border-bottom: 2px plue solid;
     color: #727D73;
