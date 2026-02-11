@@ -56,7 +56,10 @@
     background: #0b1f4d;
     border-radius: 30px;
     overflow: hidden;
+    width: 380px;
 }
+
+.search-box
 
 .nav-link ul li a:hover{
     border-bottom: 2px plue solid;
