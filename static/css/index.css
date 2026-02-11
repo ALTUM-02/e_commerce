@@ -69,7 +69,8 @@
 
 .search-box button {
     background: #3b82f6;
-    
+    border: none;
+
 }
 
 .nav-link ul li a:hover{
