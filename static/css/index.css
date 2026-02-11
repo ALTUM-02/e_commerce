@@ -82,6 +82,8 @@
 .ta span {
     background: #0b1f4d;
     padding: 6px 14px;
+    border-radius: 20px;
+    
 }
 
 .nav-link ul li a:hover{
