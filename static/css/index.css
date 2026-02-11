@@ -21,6 +21,12 @@
 
 }
 
+.nav-search {
+    margin: 0 30px;
+    padding: 10px;
+    width: 300px;
+}
+
 .nav-link ul li a:hover{
     border-bottom: 2px plue solid;
     color: #727D73;
