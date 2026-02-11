@@ -51,6 +51,12 @@
     margin-bottom: 20px;
 }
 
+.search-box {
+    display: flex;
+    background: #0b1f4d;
+    
+}
+
 .nav-link ul li a:hover{
     border-bottom: 2px plue solid;
     color: #727D73;
