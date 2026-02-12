@@ -6,7 +6,7 @@ from .forms import RegisterForm,LoginForm
 # Create your views here.
 def home(request):
     product = Product.objects.all()
-    return render(request, 'online_market/home.html', {'products': Product})
+    return render(request, 'online_market/home.html', {'products': product})
 
 def product_detail(request, id):
     product = Product.objects.get(id=id)

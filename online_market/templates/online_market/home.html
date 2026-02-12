@@ -1,5 +1,5 @@
 {% extends "reusable/base.html"%}
-
+{% load static %}
 {% block content %}
 
 <section class="hero">
@@ -20,7 +20,7 @@
     </div>
 
     <div class="hero-img">
-        <img src="" alt="product">
+        <img src="{% static 'images/picture.jpg' %}" alt="picture">
     </div>
 
 </section>
@@ -28,7 +28,7 @@
     <h2>Top Categories</h2>
     <a href="{% url 'home' %}">view all</a>
     <div class="Topcategories-card">
-        
+
     </div>
 </div>
 
