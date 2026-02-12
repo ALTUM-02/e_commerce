@@ -35,8 +35,12 @@
     align-items: center;
     justify-content: space-between;
     padding: 60px;
-    animation: bgchange 8s infinite alternative;
-    background: radial-gradient(circle at right, #2563eb, #050d1f 70%);
+    animation: bgchange 8s infinite alternate;
+   background: radial-gradient(circle at right, #2563eb, #050d1f 70%);
+}
+
+@keyframes bgchange {
+    0% { background: #0f2027; }
 }
 
 .hero-text {
