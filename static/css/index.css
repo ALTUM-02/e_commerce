@@ -92,6 +92,10 @@
     animation: float 3s ease-in-out infinite;
 }
 
+@keyframes float {
+    0% { transform: translateY(0); }
+}
+
 .nav-link ul li a:hover{
     border-bottom: 2px plue solid;
     color: #727D73;
