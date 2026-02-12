@@ -12,6 +12,9 @@ def product_detail(request, id):
     product = Product.objects.get(id=id)
     return render(request, 'online_market_detail.html', {'product': product})
 
+@login_required
+def add_to_cart(request, id):
+
 def register(request):
     form = RegisterForm()
     if request.method == 'POST':
