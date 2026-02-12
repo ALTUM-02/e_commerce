@@ -17,7 +17,9 @@
 .nav-link ul li{
     outline: none;
     list-style: none;any
-    font-size: 20px;
+    font-size: 15px;
+    padding: 6px 12px;
+    border-radius: 6px;
 
 }
 
