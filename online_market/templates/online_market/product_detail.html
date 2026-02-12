@@ -2,6 +2,10 @@
 {% load static %}
 {% block content %}
 
+<img src="{{ product.image.url }}" width="300">
+<p>{{ product.description }}</p>
+<h3>${{ product.price  }}</h3>
+
 
 
 {% endblock %}
