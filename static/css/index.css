@@ -30,6 +30,10 @@
     border: none;
 }
 
+.logo1 {
+    height: 40px;
+}
+
 .hero {
     display: flex;
     align-items: center;
