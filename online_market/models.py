@@ -1,6 +1,8 @@
+from django.contrib import admin
+from .models import Product
 from django.db import models
 from django.contrib.auth.models import User
-
+admin.site.admin_register(Product)
 # Create your models here.
 class Product(models.Model):
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
