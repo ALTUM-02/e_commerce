@@ -14,6 +14,10 @@ def product_detail(request, id):
 
 @login_required
 def add_to_cart(request, id):
+    Product = get_object(Product, id=id)
+    cart, created = Cart.objects.get_or_create(user=request.user)
+    
+    item, created = CartItem.objects.get_or_create(cart=cart, product=Product)
 
 def register(request):
     form = RegisterForm()
