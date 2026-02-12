@@ -41,6 +41,8 @@
 
 @keyframes bgchange {
     0% { background: #0f2027; }
+    25% { background: #203a43; }
+    
 }
 
 .hero-text {
