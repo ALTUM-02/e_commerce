@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
-from .models import Product
-from django.contrib.auth import login, logout, authenticate
+from .models import Product,Cart, CartItem
+from django.contrib.auth import login, logout, authenticate, login_required
 from .forms import RegisterForm,LoginForm
 
 # Create your views here.
