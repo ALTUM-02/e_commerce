@@ -18,6 +18,12 @@ def add_to_cart(request, id):
     cart, created = Cart.objects.get_or_create(user=request.user)
     
     item, created = CartItem.objects.get_or_create(cart=cart, product=Product)
+    
+    if not created:
+        item.quantity += 1
+    item.save()
+    
+    return redirect('cart')    
 
 def register(request):
     form = RegisterForm()
