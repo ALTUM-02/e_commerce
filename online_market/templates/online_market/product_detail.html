@@ -6,6 +6,6 @@
 <p>{{ product.description }}</p>
 <h3>${{ product.price  }}</h3>
 
-
+<form action="{% url 'add_to_cart' product.id %}" method="post"></form>
 
 {% endblock %}
