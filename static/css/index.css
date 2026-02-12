@@ -87,6 +87,11 @@
     font-size: 13px;
 }
 
+.hero-img img {
+    width: 350px;
+    animation: float 3s ease-in-out infinite;
+}
+
 .nav-link ul li a:hover{
     border-bottom: 2px plue solid;
     color: #727D73;
