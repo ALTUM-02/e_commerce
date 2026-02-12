@@ -23,7 +23,13 @@ def add_to_cart(request, id):
         item.quantity += 1
     item.save()
     
-    return redirect('cart')    
+    return redirect('cart')  
+
+@login_required
+def cart_view(request):
+    cart, created = Cart.objects.get_or_create(user=request.user)  
+    items = CartItem.objects.filter(cart=cart)
+    return render(request, 'online_market/cart.html', {'items': items})
 
 def register(request):
     form = RegisterForm()
