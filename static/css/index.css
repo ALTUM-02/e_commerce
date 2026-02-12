@@ -72,7 +72,7 @@
     background: #0b1f4d;
     border-radius: 30px;
     overflow: hidden;
-    width: 380px;
+    width: 300px;
 }
 
 .search-box input {
@@ -87,7 +87,7 @@
     background: #3b82f6;
     border: none;
     padding: 12px 20px;
-    color: wwhite;
+    color: white;
     cursor: white;
 }
 
