@@ -1,7 +1,7 @@
 from django.shortcuts import render,redirect
 from .models import Product,Cart, CartItem,Order
 from django.contrib.auth import login, logout, authenticate
-from .forms import RegisterForm,LoginForm
+from .forms import RegisterForm,LoginForm,ProductForm
 from django.contrib.auth.decorators import login_required
 
 # Create your views here.
@@ -12,6 +12,10 @@ def home(request):
 def product_detail(request, id):
     product = Product.objects.get(id=id)
     return render(request, 'online_market_detail.html', {'product': product})
+
+def add_product(request):
+    if request.method == "POST":
+        
 
 
 def add_to_cart(request, id):
