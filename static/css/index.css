@@ -244,5 +244,6 @@ button {
 .card {
     background: white;
     padding: 15px;
+    border-radius: 10px;
     
 }
