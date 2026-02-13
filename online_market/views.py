@@ -20,7 +20,7 @@ def add_product(request):
             form.save()
             return redirect('home')
     else:  
-        form = ProductForm()
+        form = ProductForm
         
     return render(request, 'online_market/add_product.html', {'from': form})      
         
