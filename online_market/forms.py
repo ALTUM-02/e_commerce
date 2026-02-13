@@ -12,5 +12,6 @@ class LoginForm(forms.Form):
     username = forms.CharField(min_length=100)
     password = forms.CharField(widget=forms.PasswordInput)
     
-CL    
+class ProductForm(forms.modelForm):
+    class Meta:  
         
