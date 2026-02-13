@@ -16,6 +16,8 @@ def product_detail(request, id):
 def add_product(request):
     if request.method == "POST":
         name = request.POST.get('name')
+        price = request.POST.get('price')
+        image = request.POST.get('mage')
             return redirect('home')
         
     return render(request, 'online_market/add_product.html')      
