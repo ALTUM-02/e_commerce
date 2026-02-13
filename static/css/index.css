@@ -237,5 +237,5 @@ button {
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 2fr));
-    
+    gap: 20px;
 }
