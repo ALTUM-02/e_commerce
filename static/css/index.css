@@ -259,4 +259,7 @@ button {
     font-weight: bold;
 }
 
-.btn
+.btn {
+    background: #2563eb;
+    
+}
