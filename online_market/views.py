@@ -15,14 +15,10 @@ def product_detail(request, id):
 
 def add_product(request):
     if request.method == "POST":
-        form = ProductForm(request.POST, request.FILES)
-        if form.is_valid():
-            form.save()
+        name = request.POST.get('name')
             return redirect('home')
-    else:  
-        form = ProductForm
         
-    return render(request, 'online_market/add_product.html', {'from': form})      
+    return render(request, 'online_market/add_product.html')      
         
 
 
