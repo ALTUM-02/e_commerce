@@ -55,4 +55,11 @@ def login(request):
 def logout_user(request):
     logout(request)
     return redirect('login')  
+
+def order_history(request):
+    user_order = Order.objects.filter(user=request.user).order_by('created_at')
+    context = {'order': user_order}
+    return render(request, 'order_history.html', context)
+
+    
         
