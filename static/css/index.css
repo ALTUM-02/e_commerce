@@ -253,3 +253,10 @@ button {
     height: 180px;
     object-fit: cover;
 }
+
+.price {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.btn
