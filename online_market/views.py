@@ -15,6 +15,8 @@ def product_detail(request, id):
 
 def add_product(request):
     if request.method == "POST":
+        form = ProductForm(request.POST, request.FILES)
+        
         
 
 
