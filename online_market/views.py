@@ -26,7 +26,7 @@ def add_to_cart(request, id):
     
     return redirect('cart')  
 
-
+@login_required
 def cart_view(request):
     cart, created = Cart.objects.get_or_create(user=request.user)  
     items = CartItem.objects.filter(cart=cart)
