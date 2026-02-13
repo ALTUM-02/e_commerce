@@ -14,4 +14,6 @@ class LoginForm(forms.Form):
     
 class ProductForm(forms.modelForm):
     class Meta:  
+        models = Product
+        
         
