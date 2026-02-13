@@ -12,7 +12,7 @@ class LoginForm(forms.Form):
     username = forms.CharField(min_length=100)
     password = forms.CharField(widget=forms.PasswordInput)
     
-class ProductForm(forms.modelForm):
+class ProductForm(forms.ModelForm):
     class Meta:  
         models = Product
         fields = ['name', 'price', 'image', 'description']

@@ -7,7 +7,19 @@
 <h2>Add Product</h2>
 <form method="post" enctype="multipart/form-data">
     {% csrf_token %}
-    {{ form.as_p }}
+
+     <label>Product Name</label>
+    <input type="text" name="name" required>
+
+    <label>Price</label>
+    <input type="number" name="price" step="0.01" required>
+
+    <label>Product Image</label>
+    <input type="file" name="image" accept="image/*" required>
+
+    <label>Description</label>
+    <textarea name="description"></textarea>
+
     <button type="submit">Save Product</button>
 </form>
 
