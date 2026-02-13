@@ -247,3 +247,7 @@ button {
     border-radius: 10px;
     text-align: center;
 }
+
+.card img {
+    width: 100%;
+}
