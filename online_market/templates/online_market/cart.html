@@ -3,10 +3,43 @@
 {% block content %}
 <h2>Your Cart</h2>
 
-{% for item in items %}
-<p>{{ item.product.name }} x {{ item.quantity }} - ${{ item.product.price }}</p>
-{% empty %}
-<p>Your cart is empty</p>
-{% endfor %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="{% static 'store/css/shop.css' %}">
+</head>
+<body>
+
+<h1 class="title">Your Shopping Cart</h1>
+
+{% if items %}
+<table class="cart-table">
+    <tr>
+        <th>Product</th>
+        <th>Qty</th>
+        <th>Price</th>
+        <th>Total</th>
+    </tr>
+
+    {% for item in items %}
+    <tr>
+        <td>{{ item.product.name }}</td>
+        <td>{{ item.quantity }}</td>
+        <td>$ {{ item.product.price }}</td>
+        <td>$ {{ item.product.price|floatformat:2 }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<a href="/" class="btn">Continue Shopping</a>
+
+{% else %}
+<p>Your cart is empty 😢</p>
+{% endif %}
+
+</body>
+</html>
 
 {% endblock %}
