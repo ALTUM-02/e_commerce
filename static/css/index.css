@@ -42,7 +42,7 @@
     justify-content: space-between;
     padding: 60px;
     animation: bgchange 8s infinite alternate;
-   background: radial-gradient(circle at right, #2563eb, #050d1f 70%);
+   background: linear-gradient(circle at right, #2563eb, #050d1f 70%);
 }
 
 @keyframes bgchange {
@@ -109,6 +109,8 @@
 }
 
 .hero-img img {
+    mix-blend-mode: screen;
+    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.4));
     width: 350px;
     animation: float 3s ease-in-out infinite;
 }
