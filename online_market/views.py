@@ -13,7 +13,7 @@ def product_detail(request, id):
     product = Product.objects.get(id=id)
     return render(request, 'online_market_detail.html', {'product': product})
 
-@login_required
+
 def add_to_cart(request, id):
     Product = get_object(Product, id=id)
     cart, created = Cart.objects.get_or_create(user=request.user)
@@ -26,7 +26,7 @@ def add_to_cart(request, id):
     
     return redirect('cart')  
 
-@login_required
+
 def cart_view(request):
     cart, created = Cart.objects.get_or_create(user=request.user)  
     items = CartItem.objects.filter(cart=cart)
