@@ -19,12 +19,15 @@ def add_product(request):
         price = request.POST.get('price')
         image = request.POST.get('image')
         description = request.POST.get('description')
+        stock = request.POST.get('stock')
         
         Product.objects.create(
             name=name,
             price=price,
             image=image,
-            description=description
+            description=description,
+            stock=stock,
+            owner=request.user
         )
         
         return redirect('home')
