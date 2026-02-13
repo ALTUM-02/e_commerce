@@ -7,7 +7,7 @@ from django.contrib.auth.decorators import login_required
 # Create your views here.
 def home(request):
     product = Product.objects.all()
-    return render(request, 'online_market/home.html', {'products': product})
+    return render(request, 'online_market/home.html', {'product': Product})
 
 def product_detail(request, id):
     product = Product.objects.get(id=id)
@@ -21,14 +21,14 @@ def add_product(request):
         description = request.POST.get('description')
         stock = request.POST.get('stock')
         
-        Product.objects.create(
-            name=name,
-            price=price,
-            image=image,
-            description=description,
-            stock=stock,
-            owner=request.user
-        )
+      #  Product.objects.create(
+       #     name=name,
+        #    price=price,
+         #   image=image,
+          #  description=description,
+           # stock=stock,
+            #User=request.user
+        #)
         
         return redirect('home')
     
