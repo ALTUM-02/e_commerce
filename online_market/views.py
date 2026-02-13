@@ -18,7 +18,15 @@ def add_product(request):
         name = request.POST.get('name')
         price = request.POST.get('price')
         image = request.POST.get('mage')
-            return redirect('home')
+        description = request.POST.get('description')
+        
+        Product.objects.create(
+            name=name,
+            price=price,
+            image=image,
+            description=description
+        )
+        
         
     return render(request, 'online_market/add_product.html')      
         
