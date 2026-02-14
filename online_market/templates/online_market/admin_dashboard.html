@@ -1,0 +1,11 @@
+{% extends "reusable/base.html"%}
+
+{% load static %}
+
+{% block content %}
+
+<h2>Admin Panel</h2>
+<p>Welcome {{ request.user.username }}</p>
+<a href="/admin/">Go Django Admin</a>
+
+{% endblock %}
