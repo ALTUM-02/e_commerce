@@ -10,7 +10,7 @@ urlpatterns = [
     path('order_history/', views.order_history, name='order_history'),
     
     path('register/', views.register, name='register'),
-    path('login/', views.login, name='login'),
+    path('login/', views.login_view, name='login'),
     path('dashboard/', views.user_dashboard, name='user_dashboard'),
     path('admin-dashboard/', views.admin_dashboard, name='admin_dashboard'),
     path('logout/', views.logout, name='logout'),
