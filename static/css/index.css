@@ -108,6 +108,11 @@
     font-size: 13px;
 }
 
+.hero-img {
+    position: relative;
+    
+}
+
 .hero-img img {
     mix-blend-mode: screen;
     filter: drop-shadow(0 20px 40px rgba(0,0,0,0.4));
