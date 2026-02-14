@@ -38,7 +38,7 @@
 
 .hero {
     min-height: 90vh;
-    display: grid;
+    display: flexbox;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: space-between;
