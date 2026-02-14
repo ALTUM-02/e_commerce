@@ -30,6 +30,7 @@
 <div class="product-grid">
     {% for product in products %}
     <div class="card">
+        {% if product.image %}
         <img src="{{ product.image.url }}">
         <h3>{{ product.name }}</h3>
         <p class="price">$ {{ product.price }}</p>
