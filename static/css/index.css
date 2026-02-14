@@ -37,12 +37,15 @@
 }
 
 .hero {
-    display: flex;
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: space-between;
     padding: 60px;
     animation: bgchange 8s infinite alternate;
-   background: linear-gradient(circle at right, #2563eb, #050d1f 70%);
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    
 }
 
 @keyframes bgchange {
