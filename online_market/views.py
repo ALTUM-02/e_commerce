@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
 from .models import Product,Cart, CartItem,Order
-from django.contrib.auth import authenticate, login, logout,
+from django.contrib.auth import authenticate, login, logout
 from .forms import RegisterForm,LoginForm,ProductForm
 from django.contrib.auth.decorators import login_required
 
@@ -65,14 +65,16 @@ def register(request):
     return render(request, 'online_market/register.html', {'form': form})
 
 def login_view(request):
-    form = LoginForm()
+    #form = LoginForm()
     if request.method == 'POST':
-        Form = LoginForm(request.POST)
-        if form.is_valid():
-            user = form.save()
-            register(request, user)
-            return redirect('home')
-    return render(request, 'online_market/login.html', {'form':form})  
+        username = request.POST['username']
+        password = request.POST['password']
+        #Form = LoginForm(request.POST)
+        i#f form.is_valid():
+          #  user = form.save()
+           # register(request, user)
+            #return redirect('home')
+    #return render(request, 'online_market/login.html', {'form':form})  
 
 def logout_view(request):
     logout(request)
