@@ -86,6 +86,9 @@ def login_view(request):
            # register(request, user)
             #return redirect('home')
     #return render(request, 'online_market/login.html', {'form':form})  
+    
+def user_dashboard(request):
+    return render(request, 'online_market/user_dashboard.html')    
 
 def logout_view(request):
     logout(request)
