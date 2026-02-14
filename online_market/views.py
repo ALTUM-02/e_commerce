@@ -90,6 +90,9 @@ def login_view(request):
 def user_dashboard(request):
     return render(request, 'online_market/user_dashboard.html')    
 
+def admin_dashboard(rquest):
+    return render(request, 'online_market/user_dashboard.html')
+
 def logout_view(request):
     logout(request)
     return redirect('login')  
