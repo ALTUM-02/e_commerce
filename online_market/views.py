@@ -64,7 +64,7 @@ def register(request):
             return redirect('home')
     return render(request, 'online_market/register.html', {'form': form})
 
-def login(request):
+def login_view(request):
     form = LoginForm()
     if request.method == 'POST':
         Form = LoginForm(request.POST)
@@ -74,7 +74,7 @@ def login(request):
             return redirect('home')
     return render(request, 'online_market/login.html', {'form':form})  
 
-def logout_user(request):
+def logout_view(request):
     logout(request)
     return redirect('login')  
 
