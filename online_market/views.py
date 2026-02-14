@@ -74,7 +74,12 @@ def login_view(request):
         if user:
             login(request, user)
             
-            if
+            if user.is_superuser:
+                return redirect('admin_dashboard')
+            else:
+                return redirect('user_dashboard')
+            
+    return render(request, 'online_market/login.html')        
         #Form = LoginForm(request.POST)
         i#f form.is_valid():
           #  user = form.save()
