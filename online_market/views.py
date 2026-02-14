@@ -81,7 +81,7 @@ def login_view(request):
             
     return render(request, 'online_market/login.html')        
         #Form = LoginForm(request.POST)
-        i#f form.is_valid():
+        #if form.is_valid():
           #  user = form.save()
            # register(request, user)
             #return redirect('home')
