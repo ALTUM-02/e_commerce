@@ -92,7 +92,8 @@ def user_dashboard(request):
 
 def admin_dashboard(request):
     data = {
-        'users': User.objects.count()
+        'users': User.objects.count(),
+        'orders': Order.objects.count(),
         ''
     }
     return render(request, 'online_market/user_dashboard.html')
