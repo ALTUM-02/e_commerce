@@ -123,7 +123,6 @@
     width: 60%;
     height: 60%;
     display: block;
-    mix-blend-mode: screen;
     -webkit-mask-image: radial-gradient(circle, black 60% , transparent 100%);
     mask-image: radial-gradient(circle, black 60%, transparent 100%);
     animation: float 3s ease-in-out infinite;
