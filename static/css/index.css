@@ -110,14 +110,14 @@
 .hero-img {
     position: relative;
     width: 200px;
-    height: 60px;
+    height: 150px;
 }
 
 .hero-img img {
     mix-blend-mode: screen;
     filter: drop-shadow(0 20px 40px rgba(0,0,0,0.4));
-    width: 60px;
-    height: 60px;
+    width: 200px;
+    height: 150px;
     -webkit-mask-image: radial-gradient(circle, black 60% , transparent 100%);
     mask-image: radial-gradient(circle, black 60%, transparent 100%);
     animation: float 3s ease-in-out infinite;
