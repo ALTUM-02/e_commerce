@@ -37,7 +37,7 @@
 }
 
 .hero {
-    min-height: 50vh;
+    min-height: 90vh;
     display: grid;
     align-items: center;
     justify-content: space-between;
