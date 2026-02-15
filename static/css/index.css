@@ -37,9 +37,8 @@
 }
 
 .hero {
-    min-height: 90vh;
-    display: flexbox;
-    grid-template-columns: 1fr 1fr;
+    min-height: 50vh;
+    display: grid;
     align-items: center;
     justify-content: space-between;
     padding: 60px;
@@ -113,16 +112,15 @@
 
 .hero-img {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 60px;
+    height: 60px;
 }
 
 .hero-img img {
     mix-blend-mode: screen;
     filter: drop-shadow(0 20px 40px rgba(0,0,0,0.4));
-    width: 60%;
-    height: 60%;
-    display: block;
+    width: 60px;
+    height: 60px;
     -webkit-mask-image: radial-gradient(circle, black 60% , transparent 100%);
     mask-image: radial-gradient(circle, black 60%, transparent 100%);
     animation: float 3s ease-in-out infinite;
