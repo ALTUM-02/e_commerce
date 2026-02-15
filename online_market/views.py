@@ -91,6 +91,10 @@ def user_dashboard(request):
     return render(request, 'online_market/user_dashboard.html')    
 
 def admin_dashboard(request):
+    data = {
+        'users': User.objects.count()
+        ''
+    }
     return render(request, 'online_market/user_dashboard.html')
 
 def logout_view(request):
