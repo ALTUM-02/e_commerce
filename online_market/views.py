@@ -40,7 +40,7 @@ def add_to_cart(request, id):
     product = Product.objects.get(id=id)
     cart, created = Cart.objects.get_or_create(user=request.user)
     
-    cart_item, created = CartItem.objects.get_or_create(cart=cart, product=product)
+    cart_item, created = CartItem.objects.get_or_create(cart=cart, product=product, defaults={'quantity': 1})
     
     if not created:
         cart_item.quantity += 1
