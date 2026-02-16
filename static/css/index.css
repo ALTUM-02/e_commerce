@@ -290,4 +290,5 @@ button {
     display: block;
     color: white;
     padding: 12px;
+    text-decoration: none;
 }
