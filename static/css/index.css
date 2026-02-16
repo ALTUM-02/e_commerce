@@ -296,3 +296,8 @@ button {
 .sidebar a:hover {
     background: #57606f;
 }
+
+.main {
+    margin-left: 220px;
+    
+}
