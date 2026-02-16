@@ -1,5 +1,5 @@
 from django.shortcuts import render,redirect
-from .models import Product,Cart, CartItem,Order
+from .models import Product,Cart, CartItem,Order,add_to_cart
 from django.contrib.auth import authenticate,  login as auth_login, logout
 from .forms import RegisterForm,LoginForm,ProductForm
 from django.contrib.auth.decorators import login_required
