@@ -292,3 +292,7 @@ button {
     padding: 12px;
     text-decoration: none;
 }
+
+.sidebar a:hover {
+    background: #57606f;
+}
