@@ -289,4 +289,5 @@ button {
 .sidebar a{
     display: block;
     color: white;
+    padding: 12px;
 }
