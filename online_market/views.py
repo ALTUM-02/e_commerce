@@ -44,11 +44,11 @@ def add_to_cart(request, id):
     
     if not created:
         cart_item.quantity += 1
+        cart_item.save()
         
     else:
         cart_item.quantity = 1   
          
-    cart_item.save()
     
     return redirect('cart')  
 
