@@ -281,5 +281,5 @@ button {
     width: 220px;
     height: 100vh;
     background: #2f3542;
-    
+    position: fixed;
 }
