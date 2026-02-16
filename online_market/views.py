@@ -6,12 +6,12 @@ from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def home(request):
-    product = Product.objects.all()
-    return render(request, 'online_market/home.html', {'product': Product})
+    products = Product.objects.all()
+    return render(request, 'online_market/home.html', {'products': products})
 
 def product_detail(request, id):
     product = Product.objects.get(id=id)
-    return render(request, 'online_market_detail.html', {'product': product})
+    return render(request, 'online_market/product_detail.html', {'product': product})
 
 def add_product(request):
     if request.method == "POST":
@@ -37,10 +37,10 @@ def add_product(request):
 
 
 def add_to_cart(request, id):
-    Product = get_object(Product, id=id)
+    product = Product.objects.get(id=id)
     cart, created = Cart.objects.get_or_create(user=request.user)
     
-    item, created = CartItem.objects.get_or_create(cart=cart, product=Product)
+    item, created = CartItem.objects.get_or_create(cart=cart, product=product)
     
     if not created:
         item.quantity += 1
