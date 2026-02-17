@@ -138,7 +138,7 @@
     position: center;
     mix-blend-mode: screen;
     filter: drop-shadow(0 20px 40px rgba(0,0,0,0.4));
-    width: 900px;
+    width: 300px;
     height: 450px;
     -webkit-mask-image: radial-gradient(circle, black 60% , transparent 100%);
     mask-image: radial-gradient(circle, black 60%, transparent 100%);
