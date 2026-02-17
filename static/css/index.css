@@ -38,7 +38,7 @@
 
 .hero {
     height: 100vh;
-    display: grid;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 60px;
