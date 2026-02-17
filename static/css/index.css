@@ -94,6 +94,8 @@
     transform: translate(-50%);
     background: #222;
     color: white;
+    border: none;
+    
 }
 
 .search-box button {
