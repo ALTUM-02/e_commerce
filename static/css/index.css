@@ -89,6 +89,7 @@
 
 #micBtn {
     position: absolute;
+    right: 10px;
 }
 
 .search-box button {
