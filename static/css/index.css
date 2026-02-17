@@ -135,8 +135,8 @@
 .hero-img img {
     mix-blend-mode: screen;
     filter: drop-shadow(0 20px 40px rgba(0,0,0,0.4));
-    width: 300px;
-    height: 550px;
+    width: 600px;
+    height: 450px;
     -webkit-mask-image: radial-gradient(circle, black 60% , transparent 100%);
     mask-image: radial-gradient(circle, black 60%, transparent 100%);
     animation: float 3s ease-in-out infinite;
