@@ -87,6 +87,10 @@
     color: white;
 }
 
+#micBtn {
+    
+}
+
 .search-box button {
     flex: 1;
     background: #3b82f6;
