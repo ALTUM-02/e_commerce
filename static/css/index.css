@@ -37,7 +37,7 @@
 }
 
 .hero {
-    min-height: 50vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -342,6 +342,6 @@ th,td {
 }
 
 section {
-    min-height: 100vh;
+    min-height: 50vh;
     padding: 60px 20px;
 }
