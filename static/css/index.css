@@ -88,7 +88,6 @@
 }
 
 #micBtn {
-    position: absolute;
     transform: translate(-50%);
     background: #222;
     color: white;
