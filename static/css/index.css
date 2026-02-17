@@ -38,7 +38,7 @@
 
 .hero {
     height: 100vh;
-    display: row;
+    display: light;
     align-items: center;
     justify-content: space-between;
     padding: 60px;
@@ -46,6 +46,7 @@
     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     background-position: center;
     background-repeat: no-repeat;
+    background-image: {url 'image/picture.jpg' };
     overflow: hidden;
 }
 
