@@ -103,6 +103,7 @@
     width: 22px;
     height: 22px;
     object-fit: contain;
+}    
 
 .search-box button {
     flex: 1;
