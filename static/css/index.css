@@ -37,7 +37,7 @@
 }
 
 .hero {
-    height: 100vh;
+    min-height: 100vh;
     display: light;
     align-items: center;
     justify-content: space-between;
@@ -47,7 +47,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background: cover;
-    background-image: {url 'image/picture.jpg' };
+    background-image: url("/static/images/picture.jpg");
     overflow: hidden;
 }
 
