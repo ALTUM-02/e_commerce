@@ -230,7 +230,7 @@ body {
     margin-right: 15px;
 }
 
-.search-box button {
+./*search-box button {
     flex: 1;
     background: #3b82f6;
     border: none;
@@ -239,7 +239,7 @@ body {
     padding: 12px 20px;
     color: white;
     cursor: pointer;
-}
+}*/
 
 .tags span {
     background: #2c8db9;
