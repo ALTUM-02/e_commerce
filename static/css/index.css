@@ -291,9 +291,11 @@ body {
 }
 
 @media (max-width: 992px) {
-    flex-direction: column;
+    .hero {
+        flex-direction: column;
     text-align: center;
     padding: 40px;
+    }
 }
 
 .nav-link ul li a:hover{
