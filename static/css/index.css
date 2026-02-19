@@ -296,6 +296,10 @@ body {
         text-align: center;
         padding: 40px;
     }
+
+    .hero-img {
+        text-align: center;
+    }
 }
 
 .nav-link ul li a:hover{
