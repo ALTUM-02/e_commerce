@@ -208,6 +208,7 @@ body {
 
 .search-box button {
     padding: 15px 30px;
+    border: none;
 }
 
 #micBtn {
