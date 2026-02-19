@@ -161,7 +161,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: radial-gradient(rgba(255,255));
+    background: radial-gradient(rgba(255,255,255,0.1) 1px, transparent 1px);
 }
 
 .hero-text {
