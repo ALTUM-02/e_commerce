@@ -188,7 +188,7 @@ body {
 
 .search-box {
     display: flex;
-    background: #0b1f4d;
+    background: rgba(0, 0, 0, 0.4);
     border-radius: 40px;
     overflow: hidden;
     width: 100%;
