@@ -61,6 +61,10 @@ body {
     transition: 0.3s;
 }
 
+.nav-link ul li a:hover {
+    color
+}
+
 .nav-search {
     flex: 1;
     max-width: 400px;
