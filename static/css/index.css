@@ -263,6 +263,7 @@ body {
 
 .hero-img {
     flex: 1;
+    text-align: right;
     position: center;
     max-width: 1200px;
     height: auto;
