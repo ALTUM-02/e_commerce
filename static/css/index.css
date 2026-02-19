@@ -292,6 +292,7 @@ button {
     padding: 15px;
     border-radius: 10px;
     text-align: center;
+    cursor: pointer;
     background: linear-gradient(90deg, white, #91c3cc);
 }
 
@@ -300,6 +301,7 @@ button {
     height: 180px;
     object-fit: cover;
     cursor: pointer;
+
 }
 
 .price {
