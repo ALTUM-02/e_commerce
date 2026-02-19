@@ -156,6 +156,10 @@ body {
     100% { background: #2575fc; }
 }
 
+.hero::before {
+    content: "";
+}
+
 .hero-text {
     max-width: 50%;
 }
