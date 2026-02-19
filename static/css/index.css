@@ -31,6 +31,7 @@ body {
 .account ul {
     list-style: none;
     display: flex;
+    align-items: center;
 }
 
 .nav-link ul li{
