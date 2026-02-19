@@ -148,8 +148,7 @@ body {
 .mic-icon {
     width: 10%;
     height: 10%;
-    object-fit: contain;
-}    
+    object-fit: con 
 
 .search-box button {
     flex: 1;
