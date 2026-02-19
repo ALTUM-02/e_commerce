@@ -28,7 +28,7 @@ body {
 }
 
 .account ul {
-    
+    list-style: none;
 }
 
 .nav-link ul li{
