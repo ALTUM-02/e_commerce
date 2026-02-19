@@ -104,6 +104,10 @@ body {
     .nav-link ul li {
         margin: 8px 0;
     }
+
+    .account ul li {
+        margin: 8px 0;
+    }
 }
 
 .nav-search {
