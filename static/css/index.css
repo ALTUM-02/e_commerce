@@ -116,6 +116,7 @@ body {
    /* align-items: center;*/
     border: none;
     cursor: pointer;
+    margin-right: 15px;
 }
 
 .mic-icon {
