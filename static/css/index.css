@@ -1,4 +1,3 @@
-
 .header{
     display: flex;
     flex-direction: row;
@@ -39,7 +38,6 @@
 
 .hero {
     min-height: 50vh;
-    width: 1200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
