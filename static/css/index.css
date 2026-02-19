@@ -143,6 +143,7 @@ body {
     background-repeat: no-repeat;
     background: cover;
     background-image: url("{% static 'images/picture.jpg' %}");
+    position: relative;
     overflow: hidden;
 }
 
