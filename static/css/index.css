@@ -293,6 +293,7 @@ button {
     padding: 15px;
     border-radius: 10px;
     text-align: center;
+    background: linear-gradient(90deg, #ecf5f4, #00ffcc);
 }
 
 .card img {
