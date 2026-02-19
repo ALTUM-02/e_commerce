@@ -115,9 +115,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
+    border
     cursor: pointer;
 }
 
