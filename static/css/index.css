@@ -276,6 +276,7 @@ body {
     border-radius: 50px;
     filter: drop-shadow(0 20px 40px rgba(0,0,0,0.4));
     width: 90%;
+    max-width: 450px;
     height: 450px;
     -webkit-mask-image: radial-gradient(circle, black 60% , transparent 100%);
     mask-image: radial-gradient(circle, black 60%, transparent 100%);
