@@ -43,6 +43,10 @@ body {
     border-radius: 6px;
 }
 
+.account ul li a {
+    margin: 0 10px;
+}
+
 .nav-search {
     flex: 1;
     max-width: 400px;
