@@ -212,6 +212,7 @@ body {
     background: linear-gradient(45deg, #4facfe, #00f2fe);
     color: white;
     font-weight: bold;
+    cursor: pointer;
 }
 
 #micBtn {
