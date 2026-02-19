@@ -147,7 +147,7 @@ body {
 .hero-img {
     position: center;
     width: 300px;
-    height: 250px;
+    height: auto;
 }
 
 .hero-img img {
