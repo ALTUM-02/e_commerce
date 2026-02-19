@@ -100,6 +100,10 @@ body {
         flex-direction: column;
         text-align: center;
     }
+
+    .nav-link ul li {
+        
+    }
 }
 
 .nav-search {
