@@ -241,6 +241,10 @@ body {
     cursor: pointer;
 }*/
 
+.tags {
+    margin-top: 20px;
+}
+
 .tags span {
     background: #2c8db9;
     padding: 2px 6px;
