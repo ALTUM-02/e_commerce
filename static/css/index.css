@@ -112,7 +112,6 @@ body {
 #micBtn {
     display: flex;
     align-items: center;
-    font-size: 18px;
     border: none;
     cursor: pointer;
 }
