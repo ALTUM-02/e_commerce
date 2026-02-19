@@ -262,6 +262,7 @@ body {
 }
 
 .hero-img {
+    flex: 1;
     position: center;
     max-width: 1200px;
     height: auto;
