@@ -301,7 +301,7 @@ button {
     height: 180px;
     object-fit: cover;
     cursor: pointer;
-
+    border-radius: 20px;
 }
 
 .price {
