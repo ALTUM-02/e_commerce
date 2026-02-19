@@ -74,6 +74,10 @@ body {
         flex-direction: column;
         align-items: stretch;
     }
+
+    .logo {
+        
+    }
 }
 
 .nav-search {
