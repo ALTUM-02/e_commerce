@@ -111,7 +111,7 @@ body {
 
 #micBtn {
     background: transparent;
-    display: flex;
+   /* display: flex;*/
     font-size: 18px;
    /* align-items: center;*/
     border: none;
