@@ -200,6 +200,7 @@ body {
     flex: 1;
     border: none;
     padding: 15px 20px;
+    outline: none;
     background: transparent;
     color: rgb(23, 23, 16);
 }
