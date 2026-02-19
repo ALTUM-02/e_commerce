@@ -93,6 +93,7 @@ body {
 
     .nav-link ul {
         flex-direction: column;
+        text-align: center;
     }
 }
 
