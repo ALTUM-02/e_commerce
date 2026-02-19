@@ -81,7 +81,7 @@ body {
     }
 }
 
-/*.nav-search {
+/.nav-search {
     flex: 1;
     max-width: 400px;
     margin: 0 30px;
@@ -91,7 +91,7 @@ body {
     border-radius: 20px;
     border: none;
     outline: none;
-}*/
+}
 
 /*.logo1 {
     height: 60px;
