@@ -17,7 +17,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     z-index: 9;
-    background-color: #bed2e5;
+    color: #bed2e5;
 }
 
 .nav-link ul{
