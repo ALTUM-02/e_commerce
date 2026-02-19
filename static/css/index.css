@@ -51,7 +51,7 @@ body {
     text-decoration: none;
     color: white;
     font-size: 14px;
-    trans
+    transition: o.3s;
 }
 
 .nav-search {
