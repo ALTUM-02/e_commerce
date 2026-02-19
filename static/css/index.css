@@ -170,6 +170,7 @@ body {
 
 .hero-text {
     flex: 1;
+    z-index: 2;
     max-width: 50%;
 }
 
