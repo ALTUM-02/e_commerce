@@ -159,6 +159,8 @@ body {
 .hero::before {
     content: "";
     position: absolute;
+    width: 100%;
+    
 }
 
 .hero-text {
