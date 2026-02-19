@@ -257,6 +257,10 @@ body {
     transition: 0.3s;
 }
 
+.tags span:hover {
+    background: #4facfe;
+}
+
 .hero-img {
     position: center;
     max-width: 1200px;
