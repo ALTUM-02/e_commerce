@@ -151,6 +151,7 @@ body {
 .hero-img img {
     position: center;
     mix-blend-mode: screen;
+    border-radius: 50px;
     filter: drop-shadow(0 20px 40px rgba(0,0,0,0.4));
     width: 300px;
     height: 450px;
