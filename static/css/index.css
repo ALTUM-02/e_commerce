@@ -264,6 +264,7 @@ body {
 .hero-img {
     flex: 1;
     text-align: right;
+    z-index: 2;
     position: center;
     max-width: 1200px;
     height: auto;
