@@ -104,7 +104,6 @@ body {
 .search-box input {
     flex: 1;
     border: none;
-    height: 50px;
     padding: 12px;
     background: transparent;
     color: rgb(23, 23, 16);
