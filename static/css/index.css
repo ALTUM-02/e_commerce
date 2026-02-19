@@ -39,6 +39,8 @@
 .hero {
     min-height: 50vh;
     width: 100%;
+    max-width: 1200px;
+    ma
     display: flex;
     align-items: center;
     justify-content: space-between;
