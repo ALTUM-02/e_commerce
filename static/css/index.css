@@ -37,6 +37,7 @@ body {
 
 .nav-search {
     flex: 1;
+    max-width: 400px;
     margin: 0 30px;
     padding: 15px;
     height: 20px;
