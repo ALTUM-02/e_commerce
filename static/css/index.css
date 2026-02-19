@@ -30,6 +30,7 @@ body {
 
 .account ul {
     list-style: none;
+    display: flex;
 }
 
 .nav-link ul li{
