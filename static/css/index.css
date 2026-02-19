@@ -289,11 +289,10 @@ button {
 }
 
 .card {
-    background: white;
     padding: 15px;
     border-radius: 10px;
     text-align: center;
-    background: linear-gradient(90deg, #ecf5f4, #00ffcc);
+    background: linear-gradient(90deg, #38bbac, #2b95a8);
 }
 
 .card img {
