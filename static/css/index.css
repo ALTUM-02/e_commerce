@@ -97,6 +97,7 @@ body {
     }
 
     .account ul {
+        flex-direction: column;
         
     }
 }
