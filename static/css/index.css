@@ -47,6 +47,10 @@ body {
     margin: 0 10px;
 }
 
+.nav-link ul li a {
+    text-decoration: none;
+}
+
 .nav-search {
     flex: 1;
     max-width: 400px;
