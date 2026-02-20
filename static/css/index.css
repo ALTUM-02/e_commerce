@@ -130,6 +130,7 @@ body {
 .hero {
     min-height: 50vh;
     width: 100%;
+    padding: 60px;
     /*max-width: 1300px;*/
     margin: 40px auto;
     border-radius: 25px;
