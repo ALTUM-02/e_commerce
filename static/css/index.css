@@ -139,7 +139,7 @@ body {
     justify-content: space-between;
     padding: 0 15px;
     animation: bgchange 8s infinite alternate;
-    background: linear-gradient(());
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("{% static 'images/picture.jpg' %}");
     background-position: center;
     background-repeat: no-repeat;
     background: cover;
