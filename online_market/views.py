@@ -1,4 +1,5 @@
 from django.shortcuts import render,redirect
+from django.http import JsonResponse
 from .models import Product,Cart, CartItem,Order
 from django.contrib.auth import authenticate,  login as auth_login, logout
 from .forms import RegisterForm,LoginForm,ProductForm
