@@ -1,4 +1,4 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render,redirect, get_object_or_404
 from django.http import JsonResponse
 from .models import Product,Cart, CartItem,Order
 from django.contrib.auth import authenticate,  login as auth_login, logout
@@ -53,6 +53,8 @@ def add_to_cart(request, id):
     
     return redirect('cart')  
 
+def add_to_cart_ajax(request):
+    if request.method == "POST":
 
 def cart_view(request):
     cart, created = Cart.objects.get_or_create(user=request.user)  
