@@ -53,7 +53,7 @@ def add_to_cart(request, id):
     
     return redirect('cart')  
 
-def add_to_cart_ajax(request):
+#def add_to_cart_ajax(request):
     if request.method == "POST":
         product_id = request.POST.get('product_id')
         product =get_object_or_404(Product, id=product_id)
@@ -77,9 +77,9 @@ def add_to_cart_ajax(request):
             'quantity': cart_item.quantity
         })  
         
-    return JsonResponse({'status': 'error'}) 
+    return JsonResponse({'status': 'error'}) #
 
-def live_search(request):
+#def live_search(request):
     query = request.GET.get('q') 
     
     products = Product.objects.filter(name_icontains=query)[:10]
@@ -92,7 +92,7 @@ def live_search(request):
             'price': product.price
         }) 
       
-    return JsonResponse({'products: results'})         
+    return JsonResponse({'products: results'}) #        
 
 def cart_view(request):
     cart, created = Cart.objects.get_or_create(user=request.user)  
