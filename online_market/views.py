@@ -90,7 +90,9 @@ def live_search(request):
             'id':product.id,
             'name': product.name,
             'price': product.price
-        })      
+        }) 
+      
+    return JsonResponse({'products: results'})         
 
 def cart_view(request):
     cart, created = Cart.objects.get_or_create(user=request.user)  
