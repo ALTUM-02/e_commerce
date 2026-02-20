@@ -75,7 +75,9 @@ def add_to_cart_ajax(request):
         return JsonResponse({
             'status': 'success',
             'quantity': cart_item.quantity
-        })      
+        })  
+        
+    return JsonResponse({'status': 'error'})        
 
 def cart_view(request):
     cart, created = Cart.objects.get_or_create(user=request.user)  
