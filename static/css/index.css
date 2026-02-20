@@ -143,6 +143,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-blend-mode: multiply;
     /*background-image: url("{% static 'images/picture.jpg' %}");*/
     color: white;
     /*position: relative;*/
