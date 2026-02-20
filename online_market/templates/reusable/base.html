@@ -23,7 +23,10 @@
 document.querySelector('#searchInput').addEventListener('keyup', function() {
     fetch(`/live-search/?q=${this.value}`)
     .then(response => response.json())
-    
+    .then(data => {
+        console.log(data.products);
+    })
+
 })    
 </script>    
 </body>
