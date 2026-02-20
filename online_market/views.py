@@ -82,7 +82,15 @@ def add_to_cart_ajax(request):
 def live_search(request):
     query = request.GET.get('q') 
     
-    products = Product.objects.filter(name_icontains=query)[:10]      
+    products = Product.objects.filter(name_icontains=query)[:10]
+    
+    request = []
+    for product in products:
+        request.append({
+            'id':product.id,
+            'name': product.name,
+            'price': product.price
+        })      
 
 def cart_view(request):
     cart, created = Cart.objects.get_or_create(user=request.user)  
