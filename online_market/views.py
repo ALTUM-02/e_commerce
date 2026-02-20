@@ -1,5 +1,4 @@
-from django.shortcuts import render,redirect, get_object_or_404
-from django.http import JsonResponse
+from django.shortcuts import render,redirect
 from .models import Product,Cart, CartItem,Order
 from django.contrib.auth import authenticate,  login as auth_login, logout
 from .forms import RegisterForm,LoginForm,ProductForm
@@ -110,7 +109,7 @@ def register(request):
     return render(request, 'online_market/register.html', {'form': form})
 
 def login_view(request):
-    #form = LoginForm()
+    form = LoginForm()
     if request.method == 'POST':
         username = request.POST['username']
         password = request.POST['password']
