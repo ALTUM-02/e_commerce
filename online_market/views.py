@@ -52,46 +52,7 @@ def add_to_cart(request, id):
     
     return redirect('cart')  
 
-#def add_to_cart_ajax(request):
-    if request.method == "POST":
-        product_id = request.POST.get('product_id')
-        product =get_object_or_404(Product, id=product_id)
-        
-        cart, created = Cart.objects.get_or_create(user=request.user)
-        
-        cart_item, created = CartItem.objects.get_or_create(
-            cart=cart,
-            product=product
-        )
-        
-        if not created:
-            cart_item.quantity += 1
-        else:
-            cart_item.quantity = 1
-            
-        cart_item.save()  
-        
-        return JsonResponse({
-            'status': 'success',
-            'quantity': cart_item.quantity
-        })  
-        
-    return JsonResponse({'status': 'error'}) #
-
-#def live_search(request):
-    query = request.GET.get('q') 
-    
-    products = Product.objects.filter(name_icontains=query)[:10]
-    
-    request = []
-    for product in products:
-        request.append({
-            'id':product.id,
-            'name': product.name,
-            'price': product.price
-        }) 
-      
-    return JsonResponse({'products: results'}) #        
+     
 
 def cart_view(request):
     cart, created = Cart.objects.get_or_create(user=request.user)  
