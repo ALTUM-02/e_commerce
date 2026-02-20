@@ -54,6 +54,8 @@ document.querySelectorAll('.add-to-cart-btn').forEach(button => {
             },
             body: "product_id=" + productId
         })
+        .then(response => response.json())
+        .then
     })
 })    
 </script>
