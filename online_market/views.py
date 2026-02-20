@@ -58,6 +58,11 @@ def add_to_cart_ajax(request):
         product_id = request.POST.get('product_id')
         product =get_object_or_404(Product, id=product_id)
         
+        cart, created = Cart.objects.get_or_create(user=request.user)
+        
+        cart_item, created = CartItem.objects.get_or_create(
+            ca
+        )
 
 def cart_view(request):
     cart, created = Cart.objects.get_or_create(user=request.user)  
