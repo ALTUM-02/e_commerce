@@ -70,7 +70,11 @@ def add_to_cart_ajax(request):
         else:
             cart_item.quantity = 1
             
-        cart_item.save()        
+        cart_item.save()  
+        
+        return JsonResponse({
+            'status': 'success',
+        })      
 
 def cart_view(request):
     cart, created = Cart.objects.get_or_create(user=request.user)  
