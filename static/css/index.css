@@ -288,7 +288,7 @@ body {
     animation: float 3s ease-in-out infinite;*/
     height: 100%;
     top: 0;
-    left
+    left: 0;
 }
 
 @keyframes float {
