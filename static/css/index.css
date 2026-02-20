@@ -144,6 +144,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: multiply;
+    background-color: #0f2e2e;
     /*background-image: url("{% static 'images/picture.jpg' %}");*/
     color: white;
     /*position: relative;*/
