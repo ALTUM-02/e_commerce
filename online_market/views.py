@@ -61,8 +61,12 @@ def add_to_cart_ajax(request):
         cart, created = Cart.objects.get_or_create(user=request.user)
         
         cart_item, created = CartItem.objects.get_or_create(
-            ca
+            cart=cart,
+            product=product
         )
+        
+        if not created:
+            cart_item.quantity += 1
 
 def cart_view(request):
     cart, created = Cart.objects.get_or_create(user=request.user)  
