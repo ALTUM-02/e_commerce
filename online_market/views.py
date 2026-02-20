@@ -56,6 +56,8 @@ def add_to_cart(request, id):
 def add_to_cart_ajax(request):
     if request.method == "POST":
         product_id = request.POST.get('product_id')
+        product =get_object_or_404(Product, id=product_id)
+        
 
 def cart_view(request):
     cart, created = Cart.objects.get_or_create(user=request.user)  
