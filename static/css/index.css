@@ -142,7 +142,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background: cover;
-    background-image: url("{% static 'images/picture.jpg' %}");
+    /*background-image: url("{% static 'images/picture.jpg' %}");*/
     color: white;
     position: relative;
     overflow: hidden;
