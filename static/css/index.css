@@ -287,6 +287,8 @@ body {
     mask-image: radial-gradient(circle, rgb(36, 142, 168) 60%, transparent 100%);
     animation: float 3s ease-in-out infinite;*/
     height: 100%;
+    top: 0;
+    left
 }
 
 @keyframes float {
