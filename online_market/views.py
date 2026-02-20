@@ -74,6 +74,7 @@ def add_to_cart_ajax(request):
         
         return JsonResponse({
             'status': 'success',
+            'quantity': cart_item.quantity
         })      
 
 def cart_view(request):
