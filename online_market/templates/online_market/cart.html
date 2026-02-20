@@ -55,7 +55,11 @@ document.querySelectorAll('.add-to-cart-btn').forEach(button => {
             body: "product_id=" + productId
         })
         .then(response => response.json())
-        .then
+        .then(data => {
+            if (data.status === "success") {
+                alert("Added to cart");
+            }
+        })
     })
 })    
 </script>
