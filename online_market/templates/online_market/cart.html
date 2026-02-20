@@ -47,7 +47,11 @@ document.querySelectorAll('.add-to-cart-btn').forEach(button => {
         const productId = this.dataset.id;
 
         fetch("{% url 'add_to_cart_ajax' %}", {
-            method
+            method: "POST",
+            headers: {
+                "content-Type": "application/x-www-form-urlencoded",
+                
+            }
         })
     })
 })    
