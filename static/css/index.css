@@ -146,7 +146,7 @@ body {
     /*background-image: url("{% static 'images/picture.jpg' %}");*/
     color: white;
     position: relative;
-    overflow: hidden;
+   /* overflow: hidden;*/
 }
 
 @keyframes bgchange {
