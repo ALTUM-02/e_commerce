@@ -277,6 +277,7 @@ body {
     border-radius: 50px;
     filter: drop-shadow(0 20px 40px rgba(0,0,0,0.4));
     width: 90%;
+    object-fit: cover;
     max-width: 450px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.5);
     /*height: 450px;
