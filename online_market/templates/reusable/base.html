@@ -21,7 +21,8 @@
 
 <script>
 document.querySelector('#searchInput').addEventListener('keyup', function() {
-    
+    fetch(`/live-search/?q=${this.value}`)
+    .then(response => response.json())
 })    
 </script>    
 </body>
