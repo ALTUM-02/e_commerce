@@ -77,7 +77,10 @@ def add_to_cart_ajax(request):
             'quantity': cart_item.quantity
         })  
         
-    return JsonResponse({'status': 'error'})        
+    return JsonResponse({'status': 'error'}) 
+
+def live_search(request):
+    query = request.GET.get('q')       
 
 def cart_view(request):
     cart, created = Cart.objects.get_or_create(user=request.user)  
