@@ -1,5 +1,6 @@
 from django.shortcuts import render,redirect
-from .models import Product,Cart, CartItem,Order
+from django.http import JsonResponse
+from .models import Product,Cart, CartItem,Order ,OrderItem
 from django.contrib.auth import authenticate,  login as auth_login, logout
 from .forms import RegisterForm,LoginForm,ProductForm
 from django.contrib.auth.decorators import login_required
@@ -8,6 +9,24 @@ from django.contrib.auth.decorators import login_required
 def home(request):
     products = Product.objects.all()
     return render(request, 'online_market/home.html', {'products': products})
+
+@login_required
+def like_product_ajax(request):
+    if request.method == "POST":
+        product_id = request.POST.get("product_id")
+        product = Product.objects.get(id=product_id)
+
+        if request.user in product.likes.all():
+            product.likes.remove(request.user)
+            liked = False
+        else:
+            product.likes.add(request.user)
+            liked = True
+
+        return JsonResponse({
+            "liked": liked,
+            "total_likes": product.total_likes()
+        })
 
 def product_detail(request, id):
     product = Product.objects.get(id=id)
@@ -65,7 +84,7 @@ def register(request):
         form = RegisterForm(request.POST)
         if form.is_valid():
             user = form.save()
-            login(request, user)
+            auth_login(request, user)
             return redirect('home')
     return render(request, 'online_market/register.html', {'form': form})
 
@@ -100,16 +119,54 @@ def admin_dashboard(request):
         'orders': Order.objects.count(),
         'products': Product.objects.count()
     }
-    return render(request, 'online_market/user_dashboard.html')
+    return render(request, 'online_market/admin_dashboard.html', data)
 
 def logout_view(request):
     logout(request)
-    return redirect('login')  
+    return redirect('login') 
+
+@login_required
+def my_orders(request):
+    orders = Order.objects.filter(user=request.user).order_by('-created_at')
+    return render(request, 'orders/my_orders.html', {'orders': orders})
+
+@login_required
+def order_detail(request, order_id):
+    order = get_object_or_404(Order, id=order_id, user=request.user)
+    items = order.orderitem_set.all()
+    return render(request, 'orders/order_detail.html', {
+        'order': order,
+        'items': items
+    })
+    
+def place_order(request):
+    cart = Cart .objects.get(user=request.user)
+    cart_items = cart.cartitem_set.all()
+    
+    if not cart_items:
+        return redirect('cart')
+    
+    Order = Order.objects.create(
+        user=request.user,
+        total_amount=cart.total_price()
+    )
 
 def order_history(request):
     user_order = Order.objects.filter(user=request.user).order_by('created_at')
     context = {'order': user_order}
+    
     return render(request, 'order_history.html', context)
+
+@login_required
+def like_product(request, product_id):
+    product = Product.objects.get(id=id)
+    
+    if request.user in product.likes.all():
+        product.likes.remove(request.user)
+    else:
+        product.likes.add(request.user)
+        
+    return redirect('home')        
 
     
         
