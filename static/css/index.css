@@ -437,6 +437,7 @@ button {
     border-radius: 10px;
     text-align: center;
     cursor: pointer;
+    transition: 0.3s ease;
     background: linear-gradient(90deg, white, #91c3cc);
 }
 
@@ -459,6 +460,10 @@ button {
     padding: 8px 14px;
     border-radius: 8px;
     text-decoration: none;
+}
+
+.btn:hover {
+    background: #333;
 }
 
 .sidebar {
