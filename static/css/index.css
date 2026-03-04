@@ -1,6 +1,6 @@
 body {
     overflow-x: hidden;
-    background-color: white;
+    
 }
 
 .header{
@@ -8,12 +8,15 @@ body {
     background-color: #2563eb;
     align-items: center;
     padding: 10px 20px;
-
     flex-wrap: wrap;
     justify-content: space-between;
     z-index: 9;
-    color: white;
-}*/
+    
+}
+
+.main-content {
+    background-color: white;
+}
 
 .nav-link ul{
     align-items: center;

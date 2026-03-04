@@ -14,11 +14,16 @@
 
 </head>
 <body>
-    {% include "reusable/header.html" %}
 
-    {% block content %}
+    <header class="header">
+        {% include "reusable/header.html" %}
+    </header>
 
-    {% endblock %} 
+    <main class="main-content">
+        {% block content %}
+
+        {% endblock %}
+    </main>     
 
     {% include "reusable/footer.html" %}
   
