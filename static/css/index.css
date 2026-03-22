@@ -9,7 +9,8 @@ body {
 }
 
 .header{
-    width: 99%;
+    width: 100%;
+    
     background: #2563eb;
     align-items: center;
     padding: 10px 20px;
