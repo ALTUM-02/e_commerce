@@ -9,7 +9,7 @@ body {
 }
 
 .header{
-    width: 100%;
+    width: 99%;
     background: #2563eb;
     align-items: center;
     padding: 10px 20px;
@@ -284,7 +284,7 @@ body {
     height: 450px;
     -webkit-mask-image: radial-gradient(circle, black 60% , transparent 100%);
     mask-image: radial-gradient(circle, rgb(36, 142, 168) 60%, transparent 100%);
-    animation: float 3s ease-in-out infinite;*/
+    animation: float 3s ease-in-out infinite;
     height: 100%;
     top: 0;
     left: 0;
