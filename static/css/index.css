@@ -501,7 +501,7 @@ button {
 }
 
 table {
-    
+    width: 100%;
     background: white;
     border-collapse: collapse;
     cursor: pointer;
